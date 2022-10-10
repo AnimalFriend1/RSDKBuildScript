@@ -68,7 +68,7 @@ then
     then
         make PLATFORM=3DS AUTOBUILD=1
     else
-        make PLATFORM=3DS AUTOBUILD=0
+        make PLATFORM=3DS
     fi
     mv bin/3DS/CTR/RSDKv5.elf ../RSDKv5.elf
     mv bin/3DS/CTR/RSDKv5.3dsx ../RSDKv5.3dsx
@@ -97,7 +97,7 @@ then
     then
         make PLATFORM=Wii AUTOBUILD=1
     else
-        make PLATFORM=Wii AUTOBUILD=0
+        make PLATFORM=Wii
     fi
     mv bin/Wii/RSDKv5.dol ../RSDKv5.dol
     cd ..
