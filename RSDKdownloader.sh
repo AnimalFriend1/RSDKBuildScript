@@ -99,7 +99,7 @@ then
     else
         make PLATFORM=Wii
     fi
-    mv bin/Wii/RSDKv5.dol ../RSDKv5.dol
+    mv bin/Wii/RSDKv5.dol ../boot.dol
     cd ..
     rm -rf ./Sonic-Mania-Decompilation ./RSDKv5-Decompilation
 fi
