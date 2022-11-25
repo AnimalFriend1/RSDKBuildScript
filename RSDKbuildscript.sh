@@ -80,7 +80,7 @@ elif [ $RSDK -eq 4 ]; then
 elif [ $RSDK -eq 5 ]; then
     select yn in "Linux" "3DS" "Wii"; do
         case $yn in
-            Linux ) PLATFORM=linux; pkgs='libglew-dev'; break;;
+            Linux ) PLATFORM=linux; pkgs='libglew-dev libglfw3-dev libsdl2-dev libtheora-dev'; break;;
             3DS ) PLATFORM=3ds; break;;
             Wii ) PLATFORM=wii; break;;
         esac
@@ -127,7 +127,7 @@ then
     echo Some dependencies are missing, install them now?
     select yn in "Yes" "No"; do
         case $yn in
-            Yes ) sudo apt-get install $pkgs; break;;
+            Yes ) sudo apt-get update; sudo apt-get install $pkgs; break;;
             No ) exit;;
         esac
     done
