@@ -162,9 +162,9 @@ then
         #Check if plus is enabled and build
         if [ PLUS = 1 ];
         then
-            make AUTOBUILD=1
-        else
             make
+        else
+            make AUTOBUILD=1
         fi
         #cleanup
         cp ./bin/Linux/GL3/Game.so ../
@@ -294,9 +294,9 @@ then
         #check if plus is enabled and build
         if [ PLUS = 1 ];
         then
-            make PLATFORM=3DS AUTOBUILD=1
-        else
             make PLATFORM=3DS
+        else
+            make PLATFORM=3DS AUTOBUILD=1
         fi
         #cleanup
         mv bin/3DS/CTR/RSDKv5.elf ../RSDKv5.elf
@@ -317,9 +317,9 @@ then
         #check if plus is enabled and build
         if [ PLUS = 1 ];
         then
-            make PLATFORM=Wii AUTOBUILD=1
-        else
             make PLATFORM=Wii
+        else
+            make PLATFORM=Wii AUTOBUILD=1
         fi
         #cleanup
         mv bin/Wii/RSDKv5.dol ../RSDKv5.dol
